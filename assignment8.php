@@ -3,7 +3,7 @@
         /*  Question 01:
         Create a function that will return children, teenagers, young people, old people from the age */
 
-              echo "<h3>Create a function that will return children, teenagers, young people, old people from the age </h3>"; //HTML Headline
+              echo "<h3>Q-1: Create a function that will return children, teenagers, young people, old people from the age </h3>"; //HTML Headline
               echo "<hr/>"; //HTML horizontal line
 
 
@@ -30,7 +30,7 @@
               /*  Question 02:
                 Create a function that will return the area of a rectangle, square, triangle */
 
-              echo "<h3>Create a function that will return the area of a rectangle, square, triangle </h3>"; //HTML Headline
+              echo "<h3>Q-2: Create a function that will return the area of a rectangle, square, triangle </h3>"; //HTML Headline
               echo "<hr/>"; //HTML horizontal line
 
                       function rectangle($lenth, $width) {
@@ -52,7 +52,7 @@
 
                         /*  Question 02: GPA function for result publishing */
 
-              echo "<h3>GPA function for result publishing</h3>"; //HTML Headline
+              echo "<h3>Q-3: GPA function for result publishing</h3>"; //HTML Headline
               echo "<hr/>"; //HTML horizontal line
 
                function gpaCal($avgMarks)
