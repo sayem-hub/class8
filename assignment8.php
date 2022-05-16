@@ -99,9 +99,40 @@
                       $today = new Datetime(date('d.m.y'));
                       $diff = $today->diff($birthday);
                       printf(' Your age : %d years, %d month, %d days', $diff->y, $diff->m, $diff->d);
-                      
 
 
-        
+
+                      /*  Question 05: Create a BMI function for health */
+
+                      echo "<h3>Q-5: Create a BMI function for health </h3>"; //HTML Headline
+                      echo "<hr/>"; //HTML horizontal line
+
+
+                      $weightInKg = 60;
+                      $heightInMeter = 1.58;
+
+                      function bmi($weightInKg,$heightInMeter) {
+                          $bmi = $weightInKg/($heightInMeter*$heightInMeter);
+                          return $bmi;
+                      }   
+
+                      $bmi = bmi($weightInKg,$heightInMeter); 
+
+                      if ($bmi <= 18.5) {
+                          $message = "UNDERWEIGHT";
+
+                          } else if ($bmi > 18.5 AND $bmi<=24.9 ) {
+                          $message = "NORMAL WEIGHT";
+
+                          } else if ($bmi > 24.9 AND $bmi<=29.9) {
+                          $message = "OVERWEIGHT";
+
+                          } else if ($bmi > 30.0) {
+                          $message = "OBESE";
+                      }
+                      echo "Your BMI value is  " . $bmi . "  and you are : "; 
+                      echo "$message";
+                  
+                    
 
 ?>
