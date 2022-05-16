@@ -1,4 +1,4 @@
-<?php 
+<?php
 
         /*  Question 01:
         Create a function that will return children, teenagers, young people, old people from the age */
@@ -87,5 +87,21 @@
                     $totalSubj     = 4;
                     $avgMarks   = $totalMarks / $totalSubj;
                     echo gpaCal($avgMarks );
+
+
+                    /*  Question 04: Create an age calculator function */
+
+              echo "<h3>Q-4: Create an age calculator function </h3>"; //HTML Headline
+              echo "<hr/>"; //HTML horizontal line
+
+            
+                      $birthday = new DateTime('18.7.1991'); // Your date of birth
+                      $today = new Datetime(date('d.m.y'));
+                      $diff = $today->diff($birthday);
+                      printf(' Your age : %d years, %d month, %d days', $diff->y, $diff->m, $diff->d);
+                      
+
+
+        
 
 ?>
