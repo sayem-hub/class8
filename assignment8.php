@@ -130,7 +130,7 @@
 
 
                       /*  Question 06: Create a currency converter function from taka to USD, CAD, POUND, EURO etc*/
-                      echo "<h3>Q-6: reate a currency converter function from taka to USD, CAD, POUND, EURO </h3>"; //HTML Headline
+                      echo "<h3>Q-6: Create a currency converter function from taka to USD, CAD, POUND, EURO </h3>"; //HTML Headline
                       echo "<hr/>"; //HTML horizontal line
                       
                       
