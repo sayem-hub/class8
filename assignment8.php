@@ -48,10 +48,10 @@
                       echo "Area of  Rectangle = " . rectangle(20,15) . "<br>";  //Area of Rectangle = 300
                       echo "Area of  Square = " . square(6) . "<br>";//Area of Square = 36
                       echo "Area of  Triangle = " . triangle(16, 7); //Area of Triangle = 56
+                      
 
 
                         /*  Question 02: GPA function for result publishing */
-
               echo "<h3>Q-3: GPA function for result publishing</h3>"; //HTML Headline
               echo "<hr/>"; //HTML horizontal line
 
@@ -90,11 +90,9 @@
 
 
                     /*  Question 04: Create an age calculator function */
+                      echo "<h3>Q-4: Create an age calculator function </h3>"; //HTML Headline
+                      echo "<hr/>"; //HTML horizontal line
 
-              echo "<h3>Q-4: Create an age calculator function </h3>"; //HTML Headline
-              echo "<hr/>"; //HTML horizontal line
-
-            
                       $birthday = new DateTime('18.7.1991'); // Your date of birth
                       $today = new Datetime(date('d.m.y'));
                       $diff = $today->diff($birthday);
@@ -103,36 +101,61 @@
 
 
                       /*  Question 05: Create a BMI function for health */
-
                       echo "<h3>Q-5: Create a BMI function for health </h3>"; //HTML Headline
                       echo "<hr/>"; //HTML horizontal line
-
-
-                      $weightInKg = 60;
-                      $heightInMeter = 1.58;
+                                   
 
                       function bmi($weightInKg,$heightInMeter) {
                           $bmi = $weightInKg/($heightInMeter*$heightInMeter);
                           return $bmi;
                       }   
 
-                      $bmi = bmi($weightInKg,$heightInMeter); 
+                      $bmi = bmi(65, 1.58); 
 
                       if ($bmi <= 18.5) {
-                          $message = "UNDERWEIGHT";
+                          $message = "UNDERWEIGHT!";
 
                           } else if ($bmi > 18.5 AND $bmi<=24.9 ) {
-                          $message = "NORMAL WEIGHT";
+                          $message = "NORMAL WEIGHT!";
 
                           } else if ($bmi > 24.9 AND $bmi<=29.9) {
-                          $message = "OVERWEIGHT";
+                          $message = "OVERWEIGHT!";
 
                           } else if ($bmi > 30.0) {
-                          $message = "OBESE";
+                          $message = "OBESE!";
                       }
                       echo "Your BMI value is  " . $bmi . "  and you are : "; 
                       echo "$message";
-                  
-                    
 
+
+
+                      /*  Question 06: Create a currency converter function from taka to USD, CAD, POUND, EURO etc*/
+                      echo "<h3>Q-6: reate a currency converter function from taka to USD, CAD, POUND, EURO </h3>"; //HTML Headline
+                      echo "<hr/>"; //HTML horizontal line
+                      
+                      
+
+                          function currencyConverter($amountBDT, $currency) {
+                          if ($currency == "USD") {
+                          return round($amountBDT / 86.42, 2) . " usd";
+                          }
+
+                          if ($currency == "CAD") {
+                          return round($amountBDT / 66.83, 2) . " cad";
+                          }
+
+                            if ($currency == "POUND") {
+                            return round($amountBDT / 105.65, 2) . " pound";
+                          }
+
+                          if ($currency == "EURO") {
+                            return round($amountBDT / 90.09, 2) . " euro";
+                        }
+                    }
+                      
+                      $converted_amount = currencyConverter(1000, 'POUND');
+                      echo "Your converted amount is:  $converted_amount";
+      
+
+                      
 ?>
